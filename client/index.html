@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>chatterbox</title>
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+      <!-- 여기서부터 -->
+    <div id="main">
+      <h1>chatterbox</h1>
+      <div id="send">
+        <form class="submit">
+          <div id = 'name_wrapper'>
+            <span class = 'label'>Username</span><input type="text" class="inputUser"/>
+          </div>
+          <div id = 'chat_wrapper'>
+            <span class = 'label'>Chat</span><textarea class="inputChat"></textarea>
+          </div>
+            <button type="submit" id = 'send'>send</button>
+        </form>
+      </div>
+    </div>
+    <!-- 여기까지 -->
+    <div id="chats"></div>
+  </body>
+  <script src= "/socket.io/socket.io.js"></script>
+  <script src = '/scripts/socket.js' ></script>
+  <script src="scripts/app.js"></script>
+</html>
